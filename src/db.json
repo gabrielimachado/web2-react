@@ -1,0 +1,20 @@
+{
+  "receitasSalgada": [
+    {
+      "id": 1,
+      "titulo": "Bolinhos feitos com batata, bacon e queijo.",
+      "ingredientes": "4 batatas médias, 1 xícara (chá) de bacon frito, 1/2 xícara (chá) de queijo parmesão ralado,4 colheres (sopa) de cebolinha picada (opcional), 1 colher (sopa) de leite, 3 dentes de alho amassados, 200 g de queijo em pedaços,sal e pimenta-do-reino a gosto",
+      "modoPreparo":" Comece lavando as batatas, descascando-as com o descascador de legumes e cortando em pedaços.Em seguida, coloque para cozinhar em uma panela com água e uma pitada de sal até ficaram macias, cerca de 25 minutos. Após estarem cozidas, siga o mesmo processo do clássico purê: coloque os pedaços em um recipiente e amasse bem com o auxílio de um garfo. Adicione o restante dos ingredientes: o bacon frito, a cebolinha, o queijo parmesão ralado, o alho amassado e o leite e misture tudo muito bem! Com tudo misturado, pegue pequenas porções da massa, abra na palma da mão e recheie com os cubos de queijo. Depois disso, basta passar as bolinhas primeiro pelos ovos batidos, em seguida pela farinha de trigo e, por último, pela farinha de rosca. Agora, coloque as bolinhas para fritar em óleo quente.Após estarem fritos, coloque sobre um papel-toalha para absorver o excesso de gordura e voilà: delicie-se com esse salgadinho que é puro sabor."
+    }
+  ],
+  "receitasDoce": [
+    {
+      "id": 1,
+      "titulo": "json-server",
+      "ingredientes": "typicode",
+      "modoPreparo":"  "
+    }
+  ]
+ 
+ 
+}
