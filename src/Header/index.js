@@ -1,30 +1,30 @@
 import React, { Component } from 'react'
+import { FaPepperHot } from "react-icons/fa";
+import {Link} from 'react-router-dom'
+
 
 export default class index extends Component {
     render() {
         return (
             <div>
-                
-                <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
+                <nav className="" role="navigation">
                     <div className="container">
-                        
-                        <div className="navbar-header page-scroll">
-                            <a className="navbar-brand page-scroll" href="#page-top">
-                                {/* <img src="images/logo.png" height="30" /> */}
-                                <header class="w3-container w3-center w3-padding-32">
-                                    <h1><b>Cumtumpero</b></h1>
-                                    <p>Bem vindo ao blog <span class="w3-tag">Cumtumpero E></span></p>
-                                    <div class="w3-top w3-hide-small">
-                                        
-                                        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-                                            <a href="" class="w3-bar-item w3-button">HOME</a>
-                                            <a href="" class="w3-bar-item w3-button">MENU</a>
-                                            <a href="" class="w3-bar-item w3-button">ABOUT</a>
-                                            <a href="" class="w3-bar-item w3-button">CONTACT</a>
-                                        </div>
+                        <div className="">
+                            {/* <img src="images/logo.png" height="30" /> */}
+                            <header className="w3-container w3-center w3-padding-32">
+                                <h1><b>Cumtumpero</b></h1>
+                                <p>Bem vindo ao blog <span className="w3-tag">Cumtumpero <FaPepperHot /></span></p>
+                                <div className="w3-top w3-hide-small">
+
+                                    <div className="w3-bar w3-xlarge w3-black w3-opacity " id="myNavbar">
+                                        <Link to="/" className="w3-bar-item w3-button">Home</Link>
+                                        <Link to="/doce" className="w3-bar-item w3-button">Receitas Doces</Link>
+                                        <Link to="/salgado" className="w3-bar-item w3-button">Receitas Salgadas</Link>
+                                        <Link to="/" className="w3-bar-item w3-button">Contato</Link>
+                                        <Link to="/novaReceita" className="w3-bar-item w3-button">Adicionar Receitas</Link>
                                     </div>
-                                </header>
-                            </a>
+                                </div>
+                            </header>
                         </div>
                     </div>
                 </nav>

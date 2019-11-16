@@ -28,6 +28,7 @@ footer {
   position: relative;
   background-color: rgb(24, 18, 45);
   margin-top: auto;
+  display: block
 }
 
 footer .copyright {
