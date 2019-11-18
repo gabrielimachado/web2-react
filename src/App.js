@@ -6,6 +6,7 @@ import Footer from './Footer/'
 import Doce from './Container/Doce'
 import Salgado from './Container/Salgado'
 import novaReceita from './Container/novaReceita'
+import Contato from './Container/Contato'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 
@@ -17,7 +18,8 @@ export default class App extends Component{
       <Route exact path='/' component={Container}/>
       <Route exact path='/doce' component={Doce}/>
       <Route exact path='/salgado' component={Salgado}/>
-      <Route exact path='/novo' component={novaReceita}/>
+      <Route exact path='/novaReceita' component={novaReceita}/>
+      <Route exact path='/contato' component={Contato}/>
       <Footer/>
     </Router>
     );

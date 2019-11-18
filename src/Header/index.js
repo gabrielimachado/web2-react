@@ -20,7 +20,7 @@ export default class index extends Component {
                                         <Link to="/" className="w3-bar-item w3-button">Home</Link>
                                         <Link to="/doce" className="w3-bar-item w3-button">Receitas Doces</Link>
                                         <Link to="/salgado" className="w3-bar-item w3-button">Receitas Salgadas</Link>
-                                        <Link to="/" className="w3-bar-item w3-button">Contato</Link>
+                                        <Link to="/contato" className="w3-bar-item w3-button">Contato</Link>
                                         <Link to="/novaReceita" className="w3-bar-item w3-button">Adicionar Receitas</Link>
                                     </div>
                                 </div>
