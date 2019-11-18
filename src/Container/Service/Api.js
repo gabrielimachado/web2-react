@@ -5,10 +5,11 @@ const Api = axios.create({
 })
 
 const Apis = {
-    receitasSalgadas: () => Api.get('receitasSalgadas'),
-    receitasDoces: () => Api.get('receitasDoces'),
-    // saveLivro: (livro) => Api.post('livros', livro),
-    // deleteLivro: (id) => Api.delete("livros/" + id)
+    loadSalgadas: () => Api.get('receitasSalgadas'),
+    loadDoces: () => Api.get('receitasDoces'),
+    save: (livro) => Api.post('livros', livro),
+
 }
 
 export default Apis;
+
