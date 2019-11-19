@@ -6,8 +6,9 @@ const Api = axios.create({
 
 const Apis = {
     loadSalgadas: () => Api.get('receitasSalgadas'),
-    loadDoces: () => Api.get('receitasDoces'),
-    save: (livro) => Api.post('livros', livro),
+    loadDoces: () => Api.get('receitasDoces')
+  
+    // save: (livro) => Api.post('livros', livro),
 
 }
 

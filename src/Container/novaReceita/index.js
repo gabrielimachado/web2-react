@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Apis from '../Service/Api'
+import FormCheck from 'react-bootstrap/FormCheck'
 
 
 export default class index extends Component {
@@ -17,6 +18,17 @@ export default class index extends Component {
 
     salvarReceita() {
         // alert(this.refs.nome.value)
+        var doce = this.refs.doce.value
+        var salgado = this.refs.salgado.value
+
+        if (Check == doce ){
+
+ 
+        }
+        else{
+
+
+        }
         const novaReceita = {
             nomeR: this.refs.nomeR.value,
             ingredientes: this.refs.ingredientes.value,
@@ -43,8 +55,30 @@ export default class index extends Component {
                         <Form.Label>Modo de Preparo</Form.Label>
                         <Form.Control as="textarea" ref="modoPreparo" rows="3" />
                     </Form.Group>
+
+                    <Form.Group>
+                        <Form.Label as="legend" column sm={2}>
+                          
+                 </Form.Label>
+                    
+                            <Form.Check
+                                type="radio"
+                                label="Receita doce"
+                                name="doce"
+                                id="doce"
+                            />
+                            <Form.Check
+                                type="radio"
+                                label="Receita salgada"
+                                name="salgado"
+                                id="salgado"
+                            />
+                        
+                    </Form.Group>
                 </Form>
-                    <Button type="button" onClick={this.salvarReceita}> Salvar nova receita </Button>
+
+                <Button type="button" onClick={this.salvarReceita}> Salvar nova receita </Button>
+
             </div>
         )
     }
