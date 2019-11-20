@@ -1,23 +1,57 @@
 import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import FigureCaption from 'react-bootstrap/FigureCaption'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import Image from 'react-bootstrap/Image'
 
 export default class Contato extends Component {
     render() {
         return (
             <div id="contato">
-                <Form>
-                    <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows="3" />
-                    </Form.Group>
-                </Form>
-                <Button variant="outline-dark" value="Enviar" type="submit">Button</Button>
-
+                <Container className="py-5">
+                    <Row>
+                        <Col sm>
+                            <div className='offset-4'>
+                                <Image width={150} height={150} src="/img/jaca.jpg" roundedCircle /></div>
+                            <FigureCaption className="list-group-flush py-5">
+                                <h5 className="text-center" style={{ color: 'red' }}>Yasmin Barbara Novello</h5>
+                                <p className="text-center">RA: 1766406
+                                <br />Dois Vizinhos - Paraná<br />
+                                    Engenharia de Software - Todos os Periodos</p>
+                            </FigureCaption>
+                        </Col>
+                        <Col sm>
+                            <div className='offset-4'>
+                                <Image width={150} height={150} src="/img/jaca.jpg" roundedCircle /></div>
+                            <FigureCaption className="list-group-flush py-5">
+                                <h5 className="text-center" style={{ color: 'red' }}>Yasmin Barbara Novello</h5>
+                                <p className="text-center">RA: 1766406
+                                <br />Dois Vizinhos - Paraná<br />
+                                    Engenharia de Software - Todos os Periodos</p>
+                            </FigureCaption>
+                        </Col>
+                    </Row>
+                </Container>
+                {/* <Col xs={6} md={4}>
+                    <Image src="holder.js/171x180" roundedCircle />
+                </Col> */}
+                <Container>
+                    <Form>
+                        <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="name@example.com" />
+                        </Form.Group>
+                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Label>Example textarea</Form.Label>
+                            <Form.Control as="textarea" rows="3" />
+                        </Form.Group>
+                    </Form>
+                    <Button variant="outline-dark" value="Enviar" type="submit">Button</Button>
+                </Container>
             </div>
         )
     }

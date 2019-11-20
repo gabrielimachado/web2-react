@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Apis from '../Service/Api'
+import Container from 'react-bootstrap/Container'
 import FormCheck from 'react-bootstrap/FormCheck'
 
 
@@ -18,17 +19,17 @@ export default class index extends Component {
 
     salvarReceita() {
         // alert(this.refs.nome.value)
-        var doce = this.refs.doce.value
-        var salgado = this.refs.salgado.value
+        // var doce = this.refs.doce.value
+        // var salgado = this.refs.salgado.value
 
-        if (Check == doce ){
-
- 
-        }
-        else{
+        // if (Check == doce ){
 
 
-        }
+        // }
+        // else{
+
+
+        // }
         const novaReceita = {
             nomeR: this.refs.nomeR.value,
             ingredientes: this.refs.ingredientes.value,
@@ -42,25 +43,25 @@ export default class index extends Component {
     render() {
         return (
             <div>
-                <Form>
-                    <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Label>Nome da receita</Form.Label>
-                        <Form.Control type="text" ref="nomeR" placeholder="" />
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Ingredientes</Form.Label>
-                        <Form.Control as="textarea" ref="ingredientes" rows="3" />
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Modo de Preparo</Form.Label>
-                        <Form.Control as="textarea" ref="modoPreparo" rows="3" />
-                    </Form.Group>
+                <Container className='py-5'>
+                    <Form>
+                        <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Label>Nome da receita</Form.Label>
+                            <Form.Control type="text" ref="nomeR" placeholder="" />
+                        </Form.Group>
+                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Label>Ingredientes</Form.Label>
+                            <Form.Control as="textarea" ref="ingredientes" rows="3" />
+                        </Form.Group>
+                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Label>Modo de Preparo</Form.Label>
+                            <Form.Control as="textarea" ref="modoPreparo" rows="3" />
+                        </Form.Group>
 
-                    <Form.Group>
-                        <Form.Label as="legend" column sm={2}>
-                          
-                 </Form.Label>
-                    
+                        <Form.Group>
+                            <Form.Label as="legend" column sm={2}>
+
+                            </Form.Label>
                             <Form.Check
                                 type="radio"
                                 label="Receita doce"
@@ -73,12 +74,12 @@ export default class index extends Component {
                                 name="salgado"
                                 id="salgado"
                             />
-                        
-                    </Form.Group>
-                </Form>
 
-                <Button type="button" onClick={this.salvarReceita}> Salvar nova receita </Button>
+                        </Form.Group>
+                    </Form>
 
+                    <Button type="button" onClick={this.salvarReceita}> Salvar nova receita </Button>
+                </Container>
             </div>
         )
     }
