@@ -3,6 +3,8 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Apis from '../Service/Api'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import { Redirect } from 'react-router-dom'
 import FormCheck from 'react-bootstrap/FormCheck'
 
 
@@ -19,10 +21,11 @@ export default class index extends Component {
 
     salvarReceita() {
         // alert(this.refs.nome.value)
-        // var doce = this.refs.doce.value
+        //  var doce = this.refs.doce.value
         // var salgado = this.refs.salgado.value
 
-        // if (Check == doce ){
+
+        // if (doce = true ){
 
 
         // }
@@ -30,14 +33,16 @@ export default class index extends Component {
 
 
         // }
+        var tipoReceita = this.refs.tipoReceita.id
         const novaReceita = {
             nomeR: this.refs.nomeR.value,
             ingredientes: this.refs.ingredientes.value,
-            modoPreparo: this.refs.modoPreparo.value
+            modoPreparo: this.refs.modoPreparo.value,
+
 
         }
         console.log(novaReceita)
-        Apis.saveReceita(novaReceita).then(() => { this.setState({ redirect: '/' }) })
+        Apis.saveReceita(tipoReceita, novaReceita).then(() => { this.setState({ redirect: '/' }) })
     }
 
     render() {
@@ -57,25 +62,25 @@ export default class index extends Component {
                             <Form.Label>Modo de Preparo</Form.Label>
                             <Form.Control as="textarea" ref="modoPreparo" rows="3" />
                         </Form.Group>
+                        <fieldset>
+                            <Form.Group as={Row}>
 
-                        <Form.Group>
-                            <Form.Label as="legend" column sm={2}>
-
-                            </Form.Label>
-                            <Form.Check
-                                type="radio"
-                                label="Receita doce"
-                                name="doce"
-                                id="doce"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Receita salgada"
-                                name="salgado"
-                                id="salgado"
-                            />
-
-                        </Form.Group>
+                                <Form.Check
+                                    type="radio"
+                                    label="Receita Doce"
+                                    name="formHorizontalRadios"
+                                    id="receitasDoces"
+                                    ref='tipoReceita'
+                                />
+                                <Form.Check
+                                    type="radio"
+                                    label="Receita Salgada"
+                                    name="formHorizontalRadios"
+                                    id="receitasSalgadas"
+                                    ref='tipoReceita'
+                                />
+                            </Form.Group>
+                        </fieldset>
                     </Form>
 
                     <Button type="button" onClick={this.salvarReceita}> Salvar nova receita </Button>
