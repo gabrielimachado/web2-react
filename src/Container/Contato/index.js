@@ -16,19 +16,19 @@ export default class Contato extends Component {
                     <Row>
                         <Col sm>
                             <div className='offset-4'>
-                                <Image width={150} height={150} src="/img/jaca.jpg" roundedCircle /></div>
+                                <Image width={150} height={150} src="/img/contato1.jpg" roundedCircle /></div>
                             <FigureCaption className="list-group-flush py-5">
-                                <h5 className="text-center" style={{ color: 'red' }}>Yasmin Barbara Novello</h5>
-                                <p className="text-center">RA: 1766406
+                                <h5 className="text-center" style={{ color: 'rgb(218, 40, 78)' }}>Gabrieli Machado</h5>
+                                <p className="text-center">RA: 2003260
                                 <br />Dois Vizinhos - Paraná<br />
-                                    Engenharia de Software - Todos os Periodos</p>
+                                    Engenharia de Software - 5º periodo</p>
                             </FigureCaption>
                         </Col>
                         <Col sm>
                             <div className='offset-4'>
-                                <Image width={150} height={150} src="/img/jaca.jpg" roundedCircle /></div>
+                                <Image width={150} height={150} src="/img/contato2.jpeg" roundedCircle /></div>
                             <FigureCaption className="list-group-flush py-5">
-                                <h5 className="text-center" style={{ color: 'red' }}>Yasmin Barbara Novello</h5>
+                                <h5 className="text-center" style={{ color: 'rgb(218, 40, 78)' }}>Yasmin Barbara Novello</h5>
                                 <p className="text-center">RA: 1766406
                                 <br />Dois Vizinhos - Paraná<br />
                                     Engenharia de Software - Todos os Periodos</p>
@@ -46,11 +46,11 @@ export default class Contato extends Component {
                             <Form.Control type="email" placeholder="name@example.com" />
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Example textarea</Form.Label>
+                            <Form.Label>Mensagem: </Form.Label>
                             <Form.Control as="textarea" rows="3" />
                         </Form.Group>
                     </Form>
-                    <Button variant="outline-dark" value="Enviar" type="submit">Button</Button>
+                    <Button variant="outline-dark" value="Enviar"  style={{ color: 'rgb(218, 40, 78)' }} className="botao" type="submit">Button</Button>
                 </Container>
             </div>
         )

@@ -8,6 +8,7 @@ const Apis = {
     loadSalgadas: () => Api.get('receitasSalgadas'),
     loadDoces: () => Api.get('receitasDoces'),
     saveReceita: (tipoReceita, novaReceita) => Api.post(tipoReceita, novaReceita),
+    // selectImage: () => Api.get('')
 
 }
 

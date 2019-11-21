@@ -24,7 +24,9 @@ export default class Container extends Component {
         return (
             <li key={receitaDoce.id} className="list-group-item">
                 <h3>{receitaDoce.titulo}</h3>
+                <h4>Ingredientes: </h4>
                 <p>{receitaDoce.ingredientes}</p>
+                <h4 className="card">Modo de fazer: </h4>
                 <p>{receitaDoce.modoPreparo}</p>
             </li>
         )

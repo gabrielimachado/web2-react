@@ -15,8 +15,7 @@ export default class index extends Component {
                                 <h1><b>Cumtumpero</b></h1>
                                 <p>Bem vindo ao blog <span className="w3-tag">Cumtumpero <FaPepperHot /></span></p>
                                 <div className="w3-top w3-hide-small">
-
-                                    <div className="w3-bar w3-xlarge w3-black w3-opacity " id="myNavbar">
+                                    <div className="w3-bar w3-xlarge w3-black w3-opacity navbar" id="myNavbar">
                                         <Link to="/" className="w3-bar-item w3-button">Home</Link>
                                         <Link to="/doce" className="w3-bar-item w3-button">Receitas Doces</Link>
                                         <Link to="/salgado" className="w3-bar-item w3-button">Receitas Salgadas</Link>

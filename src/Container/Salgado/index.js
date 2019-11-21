@@ -25,7 +25,9 @@ export default class Container extends Component {
         return (
             <li key={receitaSalgada.id} className="list-group-item">
                 <h3>{receitaSalgada.titulo}</h3>
+                <h4>Ingredientes: </h4>
                 <p>{receitaSalgada.ingredientes}</p>
+                <h4>Modo de fazer: </h4>
                 <p>{receitaSalgada.modoPreparo}</p>
             </li>
         )
@@ -34,15 +36,17 @@ export default class Container extends Component {
         return (
             <>
                 <section>
-                    <div className='container'>
+                    <div className='container '>
                         {
                             this.state.isLoading &&
                             <span> Carregando receitas salgadas...</span>
                         }
                         {
                             !this.state.isLoading &&
-                            <ul className='list-group'>
+                            <ul className='list-group card'>
+                               
                                 {this.state.receitasSalgadas.map(this.renderSalgado)}
+
                             </ul>
                         }
                     </div>

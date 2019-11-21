@@ -11,7 +11,6 @@ export default class Container extends Component {
     //         isLoading: false
     //     }
     // }
-
     // componentDidMount() {
     //     this.setState({ isLoading: true })
     // }
@@ -27,29 +26,28 @@ export default class Container extends Component {
                                 <Carousel.Item>
                                     <img width={120} height={500} className="d-block w-100" src='/img/background_doce.jpg' alt="First slide" />
                                     <Carousel.Caption>
-                                        <h3 className="text-center">First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        <h3 className="text-center">Pizza doce</h3>
+                                        <p>Pizza de chocolate com morango</p>
                                     </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img width={120} height={500} className="d-block w-100" src='../img/background.png' alt="Second slide" />
                                     <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <h3>Pizza de calabresa acebolada</h3>
                                     </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img width={120} height={500} className="d-block w-100" src='../img/background8.png' alt="Third slide" />
                                     <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <h3>Receitas de massas</h3>
+                                        <p>Aprenda a criar sua própria massa rápida</p>
                                     </Carousel.Caption>
                                 </Carousel.Item>
                             </Carousel>
-                            <div className="py-5 col-lg-12">
-                                descrição do site, mais alguns links para receitas(fake)
+                            <div className="py-5 col-lg-12 sobre " align="center">
+                                <h3><b>Sobre</b></h3>
+                                <p>O site foi desenvolvido para facilitar a vida das pessoas, com receitas prontas contendo o modo de preparo e os ingredientes necessários tanto para refeições complexas e especial, quanto para refeições rápidas e deliciosas. Adicione sua receita, e compartilhe felicidade e praticidade com outras pessoas!</p>
                             </div>
-
                         </div>
                     </div>
                 </section>

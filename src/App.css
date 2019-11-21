@@ -26,7 +26,7 @@ footer {
   bottom: 0;
   height: auto;
   position: relative;
-  background-color: rgb(24, 18, 45);
+  background-color: rgb(192, 189, 201);
   margin-top: auto;
   display: block
 }
@@ -43,20 +43,23 @@ footer .copyright {
   font-size: 12px;
 }
 
-body, html {height: 100%}
+body, html {
+  height: 100%;
+}
 body,h1,h2,h3,h4,h5,h6 {
   font-family: "Amatic SC", sans-serif
+
 }
 
 .menu {
   display: none}
 
-#nav {
+/* #nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/img/jaca.jpg");
   min-height: 90%;
-}
+} */
 
 .w3-xlarge{
   font-size: 24px !important;
@@ -64,12 +67,14 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 .w3-black,.w3-hover-black:hover{
-  color:rgb(255, 255, 255)!important;background-color:#000!important
+  /* color:rgb(255, 255, 255)!important; */
+  background-color: #40e0d0!important;
 }
 
 .w3-opacity,.w3-hover-opacity:hover{
-  opacity:0.60
-}s
+  opacity:0.60;
+
+}
 
 .w3-opacity-off,.w3-hover-opacity-off:hover{
   opacity:1
@@ -81,8 +86,13 @@ body,h1,h2,h3,h4,h5,h6 {
 
 .w3-bar .w3-button{
   white-space:normal;
-  text-decoration: none;
+  text-decoration:rgb(218, 40, 78);
+  color:rgb(218, 40, 78)!important;
+  font-weight: bold;
+  font-family: serif;
 
+
+  /* background-color:  #40e0d0; */
 }
 /* 
 .w3-hide-small{
@@ -116,15 +126,34 @@ body,h1,h2,h3,h4,h5,h6 {
 
 .w3-padding-32 {
     padding-top: 32px !important;
-    padding-bottom: 32px !important
+    padding-bottom: 32px !important;
+
 }
 
 .w3-badge,
 .w3-tag {
-    background-color: #000;
-    color: #fff;
+    background-color:  #40e0d0;
+    color: rgb(218, 40, 78);
+    font-weight: bold;
+    font-family: serif;
     display: inline-block;
     padding-left: 8px;
     padding-right: 8px;
     text-align: center;
+}
+.sobre{
+  background-color:   #40e0d0;
+  font-family: serif;
+  
+
+}
+/* 
+#myNavbar{
+  background-color:  #40e0d0;
+
+} */
+
+.botao{
+  color: rgb(218, 40, 78); 
+  background-color: #40e0d0;
 }
