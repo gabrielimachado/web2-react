@@ -17,7 +17,7 @@ export default class Container extends Component {
     componentDidMount() {
         this.setState({ isLoading: true })
         // setInterval(() => this.setState({ contador: this.state.contador + 1 }), 1000)
-        Apis.loadSalgadas().then((res) => {
+        Apis.loadReceita(2).then((res) => {
             this.setState({ receitasSalgadas: res.data, isLoading: false })
         })
     }
