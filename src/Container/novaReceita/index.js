@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import Img from 'react-image'
-
+import {Redirect} from 'react-router-dom'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Apis from '../Service/Api'
@@ -56,8 +56,8 @@ export default class index extends Component {
         return (
             <div>
                 {
-                    // this.state.redirect &&
-                    // <Redirect to={this.state.redirect} />
+                   this.state.redirect &&
+                     <Redirect to={this.state.redirect} />
                 }
                 <Container className='py-5'>
                     <Form>
@@ -65,6 +65,8 @@ export default class index extends Component {
                             <Form.Label>Nome da receita: </Form.Label>
                             <Form.Control type="text" ref="nomeR" placeholder="" />
                         </Form.Group>
+                        <label className="" id="upload_btn">Add image</label>
+                     <input id="upload_file" type="file" accept="image/" ref="image" onChange={this.selecionarImagem} className="form-control" />
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Adicione os ingredientes: </Form.Label>
                             <Form.Control as="textarea" ref="ingredientes" rows="3" />
@@ -77,14 +79,13 @@ export default class index extends Component {
                         <Form.Group>
                             <select ref="tipo">
                                 <option value="0" defaultValue>Selecione</option>
-                                <option value="2">Sal</option>
-                                <option value="1">Casfj0sd</option>
+                                <option value="2">Salgado</option>
+                                <option value="1">Doce</option>
                             </select>
                         </Form.Group>
                     </Form>
-                    <label className="" id="upload_btn">Add image</label>
-                     <input id="upload_file" type="file" accept="image/" ref="image" onChange={this.selecionarImagem} className="form-control" />
-                    <img className="" src={this.state.src} title={this.state.name} />
+                   
+                    {/* <img className="" src={this.state.src} title={this.state.name} /> */}
                         <Button variant="outline-dark"  style={{ color: 'rgb(218, 40, 78)' }} type="button" onClick={this.salvarReceita}> Salvar receita </Button>
                 </Container>
             </div>

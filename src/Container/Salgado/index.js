@@ -24,7 +24,7 @@ export default class Container extends Component {
     renderSalgado(receitaSalgada) {
         return (
             <li key={receitaSalgada.id} className="list-group-item">
-                <h3>{receitaSalgada.titulo}</h3>
+                <h3>{receitaSalgada.nomeR}</h3>
                 <h4>Ingredientes: </h4>
                 <p>{receitaSalgada.ingredientes}</p>
                 <h4>Modo de fazer: </h4>

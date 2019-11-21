@@ -24,7 +24,7 @@ export default class Container extends Component {
     renderDoce(receitaDoce) {
         return (
             <li key={receitaDoce.id} className="list-group-item">
-                <h3>{receitaDoce.titulo}</h3>
+                <h3>{receitaDoce.nomeR}</h3>
                 <h4>Ingredientes: </h4>
                 <p>{receitaDoce.ingredientes}</p>
                 <h4 className="card">Modo de fazer: </h4>
