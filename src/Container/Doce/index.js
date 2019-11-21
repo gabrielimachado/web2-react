@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Modal from 'react-bootstrap/Modal'
 import Apis from '../Service/Api'
 
 export default class Container extends Component {
@@ -52,3 +53,4 @@ export default class Container extends Component {
         )
     }
 }
+
