@@ -26,11 +26,13 @@ footer {
   bottom: 0;
   height: auto;
   position: relative;
-  background-color: rgb(192, 189, 201);
+  background-color: #40e0d0;
   margin-top: auto;
   display: block
 }
-
+.social-buttons,a{
+  color: black !important;
+}
 footer .copyright {
   line-height: 15px;
   text-transform: none;
@@ -39,7 +41,7 @@ footer .copyright {
 }
 
 .copyright {
-  color: #fff;
+  color: #000;
   font-size: 12px;
 }
 
@@ -54,26 +56,17 @@ body,h1,h2,h3,h4,h5,h6 {
 .menu {
   display: none}
 
-/* #nav {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/img/jaca.jpg");
-  min-height: 90%;
-} */
-
 .w3-xlarge{
   font-size: 24px !important;
   
 }
 
 .w3-black,.w3-hover-black:hover{
-  /* color:rgb(255, 255, 255)!important; */
   background-color: #40e0d0!important;
 }
 
 .w3-opacity,.w3-hover-opacity:hover{
   opacity:0.60;
-
 }
 
 .w3-opacity-off,.w3-hover-opacity-off:hover{
@@ -92,12 +85,8 @@ body,h1,h2,h3,h4,h5,h6 {
   font-family: serif;
 
 
-  /* background-color:  #40e0d0; */
+ 
 }
-/* 
-.w3-hide-small{
-  display:none!important
-} */
 
 .w3-container:after,
 .w3-container:before,
@@ -147,12 +136,6 @@ body,h1,h2,h3,h4,h5,h6 {
   
 
 }
-/* 
-#myNavbar{
-  background-color:  #40e0d0;
-
-} */
-
 .botao{
   color: rgb(218, 40, 78); 
   background-color: #40e0d0;

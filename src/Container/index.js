@@ -2,27 +2,14 @@ import React, { Component } from 'react'
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Carousel from 'react-bootstrap/Carousel';
 
-// import Apis from '../Service/Api'
-
 export default class Container extends Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         isLoading: false
-    //     }
-    // }
-    // componentDidMount() {
-    //     this.setState({ isLoading: true })
-    // }
-
     render() {
-
         return (
             <>
-                <section id="intro" className="intro-section">
+                <section id="intro" className="intro-section py-5">
                     <div className="container">
                         <div className="row">
-                            <Carousel className="py-5 col-lg-12 ">
+                            <Carousel className="py-5 col-lg-12">
                                 <Carousel.Item>
                                     <img width={120} height={500} className="d-block w-100" src='/img/background_doce.jpg' alt="First slide" />
                                     <Carousel.Caption>
@@ -33,13 +20,14 @@ export default class Container extends Component {
                                 <Carousel.Item>
                                     <img width={120} height={500} className="d-block w-100" src='../img/background.png' alt="Second slide" />
                                     <Carousel.Caption>
-                                        <h3>Pizza de calabresa acebolada</h3>
+                                        <h3 className="text-center">Pizza de calabresa acebolada</h3>
+                                        <p>Calabresa acebolada</p>
                                     </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img width={120} height={500} className="d-block w-100" src='../img/background8.png' alt="Third slide" />
                                     <Carousel.Caption>
-                                        <h3>Receitas de massas</h3>
+                                        <h3 className="text-center">Receitas de massas</h3>
                                         <p>Aprenda a criar sua própria massa rápida</p>
                                     </Carousel.Caption>
                                 </Carousel.Item>

@@ -5,22 +5,17 @@ const Api = axios.create({
 })
 
 const Apis = {
-    // loadSalgadas: () => Api.get('receitasSalgadas'),
-    // loadDoces: () => Api.get('receitasDoces'),
     saveReceita: (Receita) => Api.post('receitas', Receita),
     loadReceitaById: (idReceita) => Api.get('receitas', {
         params: {
             id: idReceita
         }
     }),
-
     loadReceita: (tipoReceita) => Api.get('receitas', {
         params: {
-            tipoReceita: tipoReceita
+            tipo: tipoReceita
         }
     })
-
-
 }
 
 export default Apis;

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { FaPepperHot } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
-
 export default class index extends Component {
     render() {
         return (
@@ -10,7 +9,6 @@ export default class index extends Component {
                 <nav className="" role="navigation">
                     <div className="container">
                         <div className="">
-                            {/* <img src="images/logo.png" height="30" /> */}
                             <header className="w3-container w3-center w3-padding-32">
                                 <h1><b>Cumtumpero</b></h1>
                                 <p>Bem vindo ao blog <span className="w3-tag">Cumtumpero <FaPepperHot /></span></p>

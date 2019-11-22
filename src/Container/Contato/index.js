@@ -8,10 +8,15 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image'
 
+
 export default class Contato extends Component {
+    fakeEnvio() {
+        alert("Sua mensagem foi enviada")
+    }
     render() {
         return (
             <div id="contato">
+
                 <Container className="py-5">
                     <Row>
                         <Col sm>
@@ -36,13 +41,13 @@ export default class Contato extends Component {
                         </Col>
                     </Row>
                 </Container>
-                {/* <Col xs={6} md={4}>
-                    <Image src="holder.js/171x180" roundedCircle />
-                </Col> */}
-                <Container>
+                <Container className="py-5">
+                    <Col className="text-center">
+                        <h3>Contate-nos</h3>
+                    </Col>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>Email address</Form.Label>
+                            <Form.Label>Email:</Form.Label>
                             <Form.Control type="email" placeholder="name@example.com" />
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -50,7 +55,9 @@ export default class Contato extends Component {
                             <Form.Control as="textarea" rows="3" />
                         </Form.Group>
                     </Form>
-                    <Button variant="outline-dark" value="Enviar"  style={{ color: 'rgb(218, 40, 78)' }} className="botao" type="submit">Button</Button>
+                    <Col className="col-2 offset-11">
+                        <Button variant="outline-dark" value="Enviar" style={{ color: 'rgb(218, 40, 78)' }} className="botao" type="submit" >Enviar</Button>
+                    </Col>
                 </Container>
             </div>
         )

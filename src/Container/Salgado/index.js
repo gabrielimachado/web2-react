@@ -1,22 +1,17 @@
 import React, { Component } from 'react'
 import Apis from '../Service/Api'
 
-
 export default class Container extends Component {
-
     constructor(props) {
         super(props)
-
         this.state = {
             receitasSalgadas: [],
             isLoading: false
         }
-        
         this.renderSalgado = this.renderSalgado.bind(this)
     }
     componentDidMount() {
         this.setState({ isLoading: true })
-        // setInterval(() => this.setState({ contador: this.state.contador + 1 }), 1000)
         Apis.loadReceita(2).then((res) => {
             this.setState({ receitasSalgadas: res.data, isLoading: false })
         })
@@ -25,6 +20,7 @@ export default class Container extends Component {
         return (
             <li key={receitaSalgada.id} className="list-group-item">
                 <h3>{receitaSalgada.nomeR}</h3>
+                <img width={980} height={500} src={receitaSalgada.imagem}></img>
                 <h4>Ingredientes: </h4>
                 <p>{receitaSalgada.ingredientes}</p>
                 <h4>Modo de fazer: </h4>
